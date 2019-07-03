@@ -1,6 +1,9 @@
 # Converter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+A simple Unit Converter Angular app using the [convert-units](https://www.npmjs.com/package/convert-units) npm-module  
+Until now, only length conversions are possible.  
+Also the Number Input including the Unit Selection could be more generic using a separate Angular Component.  
+
 
 ## Development server
 
@@ -16,12 +19,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
+### Unit tests aren't supported yet!!!
+
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
