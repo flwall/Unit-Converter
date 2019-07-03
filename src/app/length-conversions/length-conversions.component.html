@@ -1,0 +1,49 @@
+<div class="input">
+  <br />
+  <form #numForm="ngForm" (ngSubmit)="onSubmit(numForm.value)">
+    <mat-form-field>
+      <input
+        ngModel
+        required
+        matInput
+        name="num"
+        type="number"
+        lang="en-150"
+        placeholder="Number to convert"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select required placeholder="Select Unit" name="unit" ngModel>
+        <div *ngFor="let u of units">
+          <mat-option value="{{ u.name | lowercase }}">{{ u.name }}</mat-option>
+        </div>
+      </mat-select>
+    </mat-form-field>
+    <br />
+
+    <input type="submit" value="Convert!" class="btn btn-primary" />
+  </form>
+</div>
+<br />
+
+<div [hidden]="converted.length === 0">
+
+  <table class="output" mat-table [dataSource]="converted">
+    <ng-container matColumnDef="unit">
+      <th mat-header-cell *matHeaderCellDef>Unit</th>
+      <td mat-cell *matCellDef="let element">{{ element.unit.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="value">
+      <th mat-header-cell *matHeaderCellDef>Value</th>
+      <td mat-cell *matCellDef="let element">{{ element.value }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+
+
+</div>

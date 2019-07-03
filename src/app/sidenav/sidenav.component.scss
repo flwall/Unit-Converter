@@ -1,0 +1,61 @@
+mat-sidenav-container {
+  height: 100%;
+
+}
+
+h3 {
+  text-align: center
+}
+
+mat-sidenav,
+mat-sidenav-content {
+
+  padding: 16px;
+}
+
+.sideItem a:link {
+  color: black;
+
+}
+
+.sideItem a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.sideItem a:active {
+  color: black;
+  text-decoration: none;
+}
+
+
+mat-sidenav {
+  width: 400px;
+  background-color: white;
+
+
+  display: block;
+  transition: 0.5s;
+
+  a {
+    transition: 0.3s;
+
+  }
+}
+
+@media screen and (max-width:450px) {
+
+  h3 {
+    size: 14px;
+
+  }
+
+  mat-sidenav {
+    width: 100%;
+
+    font-size: 14pt;
+
+
+  }
+
+}

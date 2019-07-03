@@ -1,0 +1,21 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened">
+    <h3>Possible Convertions <img src='../../assets/img/exit.png' (click)='opened=false'/></h3>
+
+    <div class="sidenav">
+      <!-- <button class="closebtn" (click)="closeNav()">X</button> -->
+
+      <div *ngFor="let c of converters" class="sideItem">
+        <a [routerLink]="[c.component]" (click)='opened=false'>
+          <img src="{{ c.img }}" /> {{ c.name }} <br />
+        </a>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <img src="../assets/img/menu.png" (click)="opened = !opened" />
+
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
