@@ -1,8 +1,7 @@
 # Converter
 
 A simple Unit Converter Angular app using the [convert-units](https://www.npmjs.com/package/convert-units) npm-module  
-Until now, only length conversions are possible.  
-Also the Number Input including the Unit Selection could be more generic using a separate Angular Component.  
+Until now, only length& mass conversions are possible.  
 
 
 ## Development server
