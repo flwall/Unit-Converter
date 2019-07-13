@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LengthConversionsComponent } from './length-conversions/length-conversions.component';
+import { MassConversionsComponent } from './mass-conversions/mass-conversions.component';
 
 const routes: Routes = [
 
   { path: 'length-conversions', component: LengthConversionsComponent },
-  { path: '**', redirectTo: '/' }
+  {path: 'mass-conversions', component: MassConversionsComponent}
+
 
 
 ];
@@ -15,3 +17,10 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+/*
+,
+  { path: '**', redirectTo: '/' }
+
+*/

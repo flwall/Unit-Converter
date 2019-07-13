@@ -1,0 +1,16 @@
+@import '../../../vars.scss';
+table {
+
+
+  width: 100%;
+  text-align: center;
+}
+
+.mat-header-cell {
+  text-align: center;
+  font-weight: $font-weight-headers;
+  font-size: $font-size-headers;
+  text-decoration: underline;
+  color: black;
+
+}

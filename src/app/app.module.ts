@@ -12,12 +12,18 @@ import { MatTableModule } from '@angular/material/table';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { LengthConversionsComponent } from './length-conversions/length-conversions.component';
 import { FormsModule } from '@angular/forms';
+import { MassConversionsComponent } from './mass-conversions/mass-conversions.component';
+import { UnitInputComponent } from './components/unit-input/unit-input.component';
+import { UnitsTableComponent } from './components/units-table/units-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    LengthConversionsComponent
+    LengthConversionsComponent,
+    MassConversionsComponent,
+    UnitInputComponent,
+    UnitsTableComponent
   ],
   imports: [
     BrowserModule,

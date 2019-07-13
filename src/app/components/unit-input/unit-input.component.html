@@ -1,0 +1,24 @@
+<form #numForm="ngForm" (ngSubmit)="emitter.emit(numForm.value)">
+    <mat-form-field>
+      <input
+        ngModel
+        required
+        matInput
+        name="num"
+        type="number"
+        lang="en-150"
+        placeholder="Number to convert"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select required placeholder="Select Unit" name="unit" ngModel>
+        <div *ngFor="let u of units">
+          <mat-option value="{{ u.name | lowercase }}">{{ u.name }}</mat-option>
+        </div>
+      </mat-select>
+    </mat-form-field>
+    <br />
+
+    <input type="submit" value="Convert!" class="btn btn-primary" />
+  </form>

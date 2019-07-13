@@ -16,7 +16,15 @@ export class SidenavComponent implements OnInit {
     component: 'length-conversions',
     img: '../../assets/img/lengths.png'
 
-  }];
+  },
+  {
+    name: 'Mass Unit Conversions',
+    component: 'mass-conversions',
+    img: '../../assets/img/mass.png'
+  }
+
+
+  ];
 
 
   constructor() { }
