@@ -21,8 +21,6 @@ export class MassConversionsComponent implements OnInit {
 
     this.units = this.converter.units;
 
-
-
   }
 
   public onSubmit(values: any) {

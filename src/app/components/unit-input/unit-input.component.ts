@@ -10,7 +10,7 @@ import { Unit } from '../../model/units';
 export class UnitInputComponent implements OnInit {
 
   @Output()
-  public emitter: EventEmitter = new EventEmitter();
+  public emitter: EventEmitter<any> = new EventEmitter();
 
   @Input()
   public units: Unit[];
