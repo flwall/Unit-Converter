@@ -21,6 +21,11 @@ export class SidenavComponent implements OnInit {
     name: 'Mass Unit Conversions',
     component: 'mass-conversions',
     img: '../../assets/img/mass.png'
+  },
+  {
+    name: 'Area Unit Conversions',
+    component: 'area-conversions',
+    img: '../../assets/img/area_units.png'
   }
 
 

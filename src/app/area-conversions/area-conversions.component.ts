@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { MassConverterService } from '../services/mass-converter.service';
-import { Unit, UnitValue } from '../model/units';
 import { UnitConverterService } from '../services/unit-converter.service';
+import { Unit, UnitValue } from '../model/units';
 
 @Component({
-  selector: 'app-mass-conversions',
-  templateUrl: './mass-conversions.component.html',
-  styleUrls: ['./mass-conversions.component.scss']
+  selector: 'app-area-conversions',
+  templateUrl: './area-conversions.component.html',
+  styleUrls: ['./area-conversions.component.scss']
 })
-export class MassConversionsComponent implements OnInit {
+export class AreaConversionsComponent implements OnInit {
 
   units: Unit[];
   converted: UnitValue[] = [];
@@ -18,18 +17,19 @@ export class MassConversionsComponent implements OnInit {
 
   constructor(private converter: UnitConverterService) { }
 
+
   ngOnInit() {
 
-    this.units = this.converter.mass_units;
+    this.units = this.converter.area_units;
 
   }
 
-  public onSubmit(values: any) {
+
+  onSubmit(values: any) {
     if (values.num === '' || values.unit === '') { return; }
 
     const type: Unit = this.units.find(obj => obj.name.toLowerCase() === values.unit);
     this.converted = this.converter.convert(values.num, type);
-
 
   }
 

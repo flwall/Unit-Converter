@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { MassConversionsComponent } from './mass-conversions/mass-conversions.component';
 import { UnitInputComponent } from './components/unit-input/unit-input.component';
 import { UnitsTableComponent } from './components/units-table/units-table.component';
+import { AreaConversionsComponent } from './area-conversions/area-conversions.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UnitsTableComponent } from './components/units-table/units-table.compon
     LengthConversionsComponent,
     MassConversionsComponent,
     UnitInputComponent,
-    UnitsTableComponent
+    UnitsTableComponent,
+    AreaConversionsComponent
   ],
   imports: [
     BrowserModule,

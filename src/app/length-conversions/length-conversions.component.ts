@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Unit, UnitValue } from '../model/units';
-import { LengthConverterService } from '../services/length-converter.service';
+import { UnitConverterService } from '../services/unit-converter.service';
+
 
 
 @Component({
@@ -15,11 +16,11 @@ export class LengthConversionsComponent implements OnInit {
 
   displayedColumns: string[] = ['unit', 'value'];
 
-  constructor(private converter: LengthConverterService) { }
+  constructor(private converter: UnitConverterService) { }
 
   ngOnInit() {
 
-    this.units = this.converter.units;
+    this.units = this.converter.length_units;
 
   }
 

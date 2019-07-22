@@ -15,9 +15,6 @@ export class UnitInputComponent implements OnInit {
   @Input()
   public units: Unit[];
 
-
-
-
   constructor() { }
 
   ngOnInit() {

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MassConverterService } from './mass-converter.service';
+import { UnitConverterService } from './unit-converter.service';
 
-describe('MassConverterService', () => {
+describe('UnitConverterService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: MassConverterService = TestBed.get(MassConverterService);
+    const service: UnitConverterService = TestBed.get(UnitConverterService);
     expect(service).toBeTruthy();
   });
 });

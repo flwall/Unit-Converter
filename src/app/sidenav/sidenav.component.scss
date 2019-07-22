@@ -17,6 +17,9 @@ mat-sidenav-content {
   color: black;
 
 }
+.sideItem a{
+  font-size: 14pt;
+}
 
 .sideItem a:visited {
   color: black;
@@ -42,6 +45,12 @@ mat-sidenav {
 
   }
 }
+
+img{
+
+  padding-right: 10px;
+}
+
 
 @media screen and (max-width:450px) {
 
