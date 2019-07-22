@@ -1,7 +1,7 @@
 # Converter
 
 A simple Unit Converter Angular app using the [convert-units](https://www.npmjs.com/package/convert-units) npm-module  
-Until now, only length& mass conversions are possible.  
+Until now, length, mass and area conversions are possible.  
 
 
 ## Development server
