@@ -10,9 +10,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { LengthConversionsComponent } from './length-conversions/length-conversions.component';
+import { ConversionsComponent } from './conversions/conversions.component';
 import { FormsModule } from '@angular/forms';
-import { MassConversionsComponent } from './mass-conversions/mass-conversions.component';
 import { UnitInputComponent } from './components/unit-input/unit-input.component';
 import { UnitsTableComponent } from './components/units-table/units-table.component';
 import { AreaConversionsComponent } from './area-conversions/area-conversions.component';
@@ -21,8 +20,7 @@ import { AreaConversionsComponent } from './area-conversions/area-conversions.co
   declarations: [
     AppComponent,
     SidenavComponent,
-    LengthConversionsComponent,
-    MassConversionsComponent,
+    ConversionsComponent,
     UnitInputComponent,
     UnitsTableComponent,
     AreaConversionsComponent

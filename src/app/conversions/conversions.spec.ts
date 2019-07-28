@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MassConversionsComponent } from './mass-conversions.component';
+import { ConversionsComponent } from './conversions.component';
 
-describe('MassConversionsComponent', () => {
-  let component: MassConversionsComponent;
-  let fixture: ComponentFixture<MassConversionsComponent>;
+describe('ConversionsComponent', () => {
+  let component: ConversionsComponent;
+  let fixture: ComponentFixture<ConversionsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MassConversionsComponent ]
+      declarations: [ ConversionsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MassConversionsComponent);
+    fixture = TestBed.createComponent(ConversionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

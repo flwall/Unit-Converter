@@ -26,6 +26,11 @@ export class SidenavComponent implements OnInit {
     name: 'Area Unit Conversions',
     component: 'area-conversions',
     img: '../../assets/img/area_units.png'
+  },
+  {
+    name: 'Volume Unit Conversions',
+    component: 'volume-conversions',
+    img: '../../assets/img/volume.png'
   }
 
 
@@ -35,6 +40,7 @@ export class SidenavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
   closeNav() {

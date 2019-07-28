@@ -34,13 +34,32 @@ export class UnitConverterService {
       new Unit('Pound', 'lb')
 
 
-    ]
+    ];
 
 
 
 
   }
-  get area_units(){
+
+
+  get volume_units() {
+    return [
+      new Unit('Cubic Millimeters', 'mm3'),
+      new Unit('Cubic Centimeters', 'cm3'),
+      new Unit('Millilitres', 'ml'),
+      new Unit('Centilitres', 'cl'),
+      new Unit('Decilitres', 'dl'),
+      new Unit('Litres', 'l'),
+      new Unit('Kilolitres', 'kl'),
+      new Unit('Cubic meters', 'm3'),
+      new Unit('Cubic kilometers', 'km3'),
+      new Unit('Cubic feet', 'ft3'),
+      new Unit('Cubic yard', 'yd3')
+    ];
+  }
+
+
+  get area_units() {
     return [
       new Unit('Square Millimeter', 'mm2'),
       new Unit('Square Centimeter', 'cm2'),
@@ -54,7 +73,7 @@ export class UnitConverterService {
       new Unit('Square Mile', 'mi2')
 
 
-    ]
+    ];
 
 
   }
@@ -96,7 +115,7 @@ export class UnitConverterService {
     if (units == null) {
       console.log(from);
       console.log('Unit is a unknown unit');
-      throw new Error('Unit '+from.name+" is a unknown unit");
+      throw new Error('Unit ' + from.name + ' is a unknown unit');
 
     }
 
